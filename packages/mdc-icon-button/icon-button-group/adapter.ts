@@ -21,9 +21,11 @@
  * THE SOFTWARE.
  */
 
-export * from './adapter';
-export * from './component';
-export * from './constants';
-export * from './foundation';
-export * from './types';
-export * from './icon-button-group/index';
+import {MDCIconButtonToggle} from '../component';
+
+export interface MDCIconButtonGroupAdapter {
+  removeClass(className: string): void;
+
+  getToggleElements(selector: string): Array<MDCIconButtonToggle>;
+}
+ 
