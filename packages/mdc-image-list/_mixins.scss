@@ -56,6 +56,7 @@
     }
   }
 
+  picture.mdc-image-list__image > img,
   .mdc-image-list__image {
     @include mdc-feature-targets($feat-structure) {
       width: 100%;

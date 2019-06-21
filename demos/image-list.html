@@ -191,10 +191,15 @@
         <ul id="standard-image-list" class="mdc-image-list standard-image-list">
           <li class="mdc-image-list__item">
             <div class="mdc-image-list__image-aspect-container">
-              <img class="mdc-image-list__image" src="images/photos/3x2/1.jpg">
+              <!--img class="mdc-image-list__image" src="images/photos/3x2/1.jpg"-->
+              <picture class="mdc-image-list__image">
+                <source srcset="images/photos/3x2/2.jpg" media="(min-width: 800px)">
+                <source srcset="images/photos/3x2/1.jpg" media="(min-width: 200px)">
+                <img src="images/photos/3x2/1.jpg">
+              </picture>
             </div>
             <div class="mdc-image-list__supporting">
-              <span class="mdc-image-list__label">Text label</span>
+              <span class="mdc-image-list__label">Text label 1</span>
             </div>
           </li>
           <li class="mdc-image-list__item">
@@ -348,7 +353,7 @@
           <li class="mdc-image-list__item">
             <img class="mdc-image-list__image" src="images/photos/3x2/16.jpg">
             <div class="mdc-image-list__supporting">
-              <span class="mdc-image-list__label">Text label</span>
+              <span class="mdc-image-list__label">Text label 1</span>
             </div>
           </li>
           <li class="mdc-image-list__item">
@@ -358,9 +363,14 @@
             </div>
           </li>
           <li class="mdc-image-list__item">
-            <img class="mdc-image-list__image" src="images/photos/3x2/1.jpg">
+            <picture class="mdc-image-list__image">
+              <source srcset="images/photos/3x2/2.jpg" media="(min-width: 800px">
+              <source srcset="images/photos/3x2/1.jpg" media="(min-width: 200px">
+              <img src="images/photos/3x2/1.jpg">
+            </picture>
+            <!--img class="mdc-image-list__image" src="images/photos/3x2/1.jpg"-->
             <div class="mdc-image-list__supporting">
-              <span class="mdc-image-list__label">Text label</span>
+              <span class="mdc-image-list__label">Text label 3</span>
             </div>
           </li>
           <li class="mdc-image-list__item">
